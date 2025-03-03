@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const typFigury = prompt(`Jakie pole figury chcesz obliczyć 1 = prostokąt 2 = trójkąt: `);
+
+    if (typFigury == 1) {
+      const bokA = prompt(`podaj bok a prostokąta`);
+      const bokB = prompt(`podaj bok b prostokąta`);
+      alert(`${bokA*bokB}`);
+    }
+    else if (typFigury == 2) {
+      const bokC = prompt(`podaj bok C prostokąta`);
+      const bokD = prompt(`podaj bok D prostokąta`);
+      prompt(`${(bokC * bokD)/ 2 }`);
+    }
+    else {
+      window.alert(`podana liczba wykracza za zakres`)
+    }
+  </script>
+</body>
+</html>

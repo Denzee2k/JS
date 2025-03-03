@@ -1,0 +1,23 @@
+.p1{
+  font-family: Arial;
+  margin-bottom: 2000px;
+
+}
+.p2{
+  font-family: Arial;
+  line-height: 200px;
+  margin-top: 2500px;
+}
+.link1{
+  font-family: Arial;
+  font-size: 24px;
+  color: green;
+  font-style: italic;
+}
+.pies{
+  height: 500px;
+  border-radius: 12px;
+  object-fit: contain;
+  object-position: center;
+  width: 500px;
+}
