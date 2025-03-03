@@ -7,9 +7,16 @@
 </head>
 <body>
   <script>
-    const Start = prompt("Podaj poczatek przedzialu");
-    const End = prompt("Podaj koniec przedzialu");
-    const liczbaLosowa = prompt("Podaj liczbe x");
+    const rangeStart = Number(prompt("Podaj poczatek przedzialu"));
+    const rangeEnd = Number(prompt("Podaj koniec przedzialu"));
+    const randomNum = Number(prompt("Podaj liczbe x"));
+  if (randomNum >= rangeStart && randomNum <= rangeEnd) {
+    alert(`liczba ${randomNum} Należy do przedziału`);
+  }
+  else {
+    alert(`liczba ${randomNum} nie należy do przedziału`);
+  }
   </script>
 </body>
 </html>
+<!-- x = (5 > 2) ? `tak` : `nie` ; !-->
