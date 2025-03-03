@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const bokA = Number(prompt('podaj dłgość przeciwprostokątnej'));
+    const bokB = Number(prompt('podaj dłgość przyprostokątnej '));
+    const bokC = Number(prompt('podaj dłgość podstawy trójkąta'));
+    if ((bokA < bokC+bokB) && (bokB < bokC+bokA) && (bokC < bokB+bokA) ) {
+      alert("TAK");
+    }
+    else {
+      alert("NIE");
+    }
+    if (Math.pow(bokC, 2) + Math.pow(bokB, 2) == Math.pow(bokA, 2)){
+      alert("trójkąt jest prostokątny ")
+    }
+    else {
+      alert('trójkąt nie jest prostokątny')
+    }
+  </script>
+</body>
+</html>
