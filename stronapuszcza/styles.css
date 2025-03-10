@@ -1,0 +1,96 @@
+html{
+  background-image: url(tlo.jpg);
+  background-size: cover;
+}
+#main{
+ text-align: center;
+ font-size: 35px;
+ font-weight: 600;
+ font-family: Arial, Helvetica, sans-serif;
+ margin-bottom: 100px;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  background-color: rgb(221, 216, 198);
+  padding-right: 20px;
+}
+.content{
+  padding: 20px 0px 20px 10px;
+  background-color: rgb(26, 147, 26);
+  color: white;
+  border-bottom: 1px rgb(220, 210, 153) solid;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  transition: background-color 0,25s color 0,25s;
+}
+.content:hover{
+  color: rgb(26, 147, 26);
+  background-color: rgba(210, 208, 121);
+}
+.maincontainer{
+  border: 6px rgb(75, 233, 75) solid;
+  display: flex;
+  height: 600px;
+}
+.inf{
+  display: flex;
+  background-color: white;
+  padding-left: 20px;
+  flex: 1;
+}
+.wstep{
+  color:rgb(26, 147, 26);
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-indent: 40px;
+}
+#linki:link{
+  text-decoration: none;
+}
+.base{
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+  justify-content: space-between;
+}
+.zdjecia{
+  width: 130px;
+}
+.zdjecie{
+  padding-left: 30px;
+
+}
+.text{
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+}
+.butons{
+  display: flex;
+}
+.wejdz{
+  background-color: white;
+  border: 1px gray solid;
+  padding: 10px 20px 10px 20px;
+  color: gray;
+  font-family: Arial;
+  font-size: 25;
+  transform: color 0,4s, background-color 0,5;
+}
+.wejdz:hover{
+  background-color: gray;
+  border: 1px white solid;
+  color: white;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-left: 75px;
+}
+.head{
+  display: flex;
+  
+}
