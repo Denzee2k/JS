@@ -9,17 +9,17 @@
   <script>
     const x = Number(prompt('podaj liczbe x'));
     const y = Number(prompt('podaj liczbe y'));
-    if (x < 0 && y > 0) {
+    if (x <= 0 && y >= 0) {
       alert('liczba nalezy do 2 połowki')
     }
-    if (x > 0 && y < 0) {
-      alert('liczba nalezy do 2 połowki')
+    if (x >= 0 && y >= 0) {
+      alert('liczba nalezy do 1 połowki')
     }
-    if (x < 0 && y > 0) {
-      alert('liczba nalezy do 2 połowki')
+    if (x <= 0 && y <= 0) {
+      alert('liczba nalezy do 3 połowki')
     }
-    if (x < 0 && y > 0) {
-      alert('liczba nalezy do 2 połowki')
+    if (x >= 0 && y <= 0) {
+      alert('liczba nalezy do 4 połowki')
     }
   </script>
 </body>
