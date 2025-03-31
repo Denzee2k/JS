@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const number = prompt(`Podaj liczbę szesnastkową po # duzymi literami`)
+    if (number.length != 7){
+      alert(`podany kolor ma mniej niż 7 cyfr`)
+    }
+    if (number[0] !== `#`){
+      alert('podany kolor jest nie poprawny')
+    }
+    for (let i = 1; i < 7; i++) {
+      
+      if (number[i] >= 0 && number[i]<= 9 || number[i] == `A` || number[i] == `B` || number[i] == `C` || number[i] == `D` || number[i] == `E` || number[i] == `F`) {
+        console.log(`liczba ${i} sprawdzona`)
+      }
+      else{
+        alert(`błąd liczby: ${i}`)
+        break;
+      }
+      
+    }
+
+  const last = Number((number[6] * Math.pow(16,0)) + (number[5] * Math.pow(16,1)));
+  const mid = Number((number[4] * Math.pow(16,0)) + (number[3] * Math.pow(16,1)));
+  const first = Number((number[2] * Math.pow(16,0)) + (number[1] * Math.pow(16,1)));
+  alert(`w rgb podana liczba to ${first}, ${mid}, ${last}`)
+  </script>
+</body>
+</html>
