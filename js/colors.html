@@ -25,11 +25,35 @@
       }
       
     }
+    
+  let firstque = number[1] + number[2];
+  let midque = number[3] + number[4];
+  let lastque = number[5] + number[6];
+  const firstque1 = parseInt(firstque, 16);
+  midque1 = parseInt(midque, 16);
+  lastque1 = parseInt(lastque, 16);
+  alert(`w rgb podana liczba to ${firstque1},${midque1},${lastque1}`)
+  
+  const rgb = prompt(`podaj liczbę rgb w formacie: 123,456,789`);
+  let part = rgb.split(`,`);
+  let red = (+part[0]).toString(16);
+  let green = (+part[1]).toString(16);
+  let blue = (+part[2]).toString(16);
+  alert(`${red}${green}${blue}`);
 
-  const last = Number((number[6] * Math.pow(16,0)) + (number[5] * Math.pow(16,1)));
-  const mid = Number((number[4] * Math.pow(16,0)) + (number[3] * Math.pow(16,1)));
-  const first = Number((number[2] * Math.pow(16,0)) + (number[1] * Math.pow(16,1)));
-  alert(`w rgb podana liczba to ${first}, ${mid}, ${last}`)
+  let hexpartstart = number[1] + number[2]; 
+  let hexpartmiddle = number[3] + number[4];
+  let hexpartend = number[5] + number[6];
+
+  if (hexpartstart[0] == hexpartstart[1] && hexpartmiddle[0] == hexpartmiddle[1] && hexpartend[0] == hexpartend[1]){
+    alert(`można skrócic`)
+  }
+  else{
+    alert(`nie można`)
+  }
+  if(hexpartstart == hexpartmiddle && hexpartmiddle == hexpartend && hexpartend==hexpartstart){
+    alert(`odcien szarości`)
+  }
   </script>
 </body>
 </html>
