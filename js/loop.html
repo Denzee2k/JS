@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+let grades = [];
+let input;
+do {
+  input = Number(prompt(`podaj ocene 0 zakoncza proces pobierania danych`));
+  if (input !== 0) {
+    grades.push(input);
+  }
+} while (input !== 0);
+let highest = Math.max(...grades);
+console.log(highest);
+
+    let i = 1;
+    let s = 1;
+while (i <= highest) {
+  s = s * i;
+  i = i + 1
+  console.log(s)
+  console.log(i)
+}
+    while (i >= highest) {
+      alert(s);
+      break;
+    }
+      </script>
+</body>
+</html>
